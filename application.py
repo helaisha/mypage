@@ -5,10 +5,9 @@ import logging
 
 application = Flask(__name__)
 
-@application.route("/home", methods=['GET'])
-@application.route("/")
+@application.route('/')
 def base():
-    return "Welcome To My Page"
+    return 'Welcome To My Page'
 
 
 @application.route("/admin", methods=['GET'])
@@ -28,5 +27,5 @@ def admin():
 
 
 
-application.run(debug=True)
+
 
