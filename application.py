@@ -3,15 +3,15 @@ import requests
 import traceback
 import logging
 
-app = Flask(__name__)
+appplication = Flask(__name__)
 
-@app.route("/home", methods=['GET'])
-@app.route("/")
+@appplication.route("/home", methods=['GET'])
+@appplication.route("/")
 def base():
     return jsonify({"msgcode": 1, "status": "success", "message": "Welcome To My Page"}), 200
 
 
-@app.route("/admin", methods=['GET'])
+@appplication.route("/admin", methods=['GET'])
 def admin():
     try :
 
@@ -28,5 +28,5 @@ def admin():
 
 
 
-app.run(debug=True)
+appplication.run(debug=True)
 
