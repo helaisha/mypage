@@ -23,4 +23,4 @@ RUN pip install gunicorn
 # CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 run:app
 ENTRYPOINT [ "python" ]
 
-CMD ["main.py" ]
+CMD ["application.py" ]
